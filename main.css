@@ -9,6 +9,31 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+.Header {
+  width: 100%;
+  background-color: #4400ffa8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 2rem;
+}
+
+.Header .form .search {
+  padding: 20px;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  color: #fff;
+  background-color: #25008a;
+}
+
 .content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -59,14 +84,23 @@ body {
   -webkit-transition: 300ms all;
   transition: 300ms all;
   margin-top: 1rem;
-  margin-bottom: 1rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  align-items: center;
 }
 
 .content .movieEl .text .title {
   font-size: 1.3rem;
+  line-height: 125%;
+}
+
+.content .movieEl .text .vote {
+  background-color: #280096;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 
 .content .movieEl .desc {
@@ -89,5 +123,17 @@ body {
   -webkit-transition: 300ms all;
   transition: 300ms all;
   line-height: 125%;
+}
+
+.green {
+  color: lime;
+}
+
+.orange {
+  color: #ce9b00;
+}
+
+.red {
+  color: red;
 }
 /*# sourceMappingURL=main.css.map */
