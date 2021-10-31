@@ -53,6 +53,7 @@ body {
   background-color: #592ed3;
   padding: 1rem;
   color: #fff;
+  border-radius: 10px;
 }
 
 .content .movieEl:hover .desc {
@@ -123,6 +124,59 @@ body {
   -webkit-transition: 300ms all;
   transition: 300ms all;
   line-height: 125%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content .movieEl .desc .btn {
+  margin-top: 1rem;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+  font-size: 18px;
+  color: #592ed3;
+}
+
+.tags {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.tags .tag {
+  padding: 10px 15px;
+  background-color: #592ed3;
+  border-radius: 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: #fff;
+  -webkit-transition: 300ms -webkit-transform;
+  transition: 300ms -webkit-transform;
+  transition: 300ms transform;
+  transition: 300ms transform, 300ms -webkit-transform;
+}
+
+.tags .tag:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .green {
@@ -135,5 +189,15 @@ body {
 
 .red {
   color: red;
+}
+
+.active {
+  background-color: #25008a !important;
+}
+
+.error {
+  font-size: 3rem;
+  margin-top: 1rem;
+  font-weight: bold;
 }
 /*# sourceMappingURL=main.css.map */
